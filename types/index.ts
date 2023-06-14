@@ -6,3 +6,9 @@ export interface CustomButtonProps {
     containerStyles?: string;
     handleClick?: MouseEventHandler<HTMLButtonElement>;
 }
+
+export interface SearchManufacturerProps {
+    manufacturer: string,
+    // Function that Takes manufacturer as string and returns nothing
+    setManufacturer: (manufacturer: string) => void;
+}
